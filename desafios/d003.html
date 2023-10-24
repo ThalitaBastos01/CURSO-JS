@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button onclick="converter()">Converter</button>
+
+    <p>Clique no botão acima para iniciar</p>
+
+    <div id="saida"></div>
+    
+    <script>
+        var conversao = window.document.getElementById('saida')
+
+        function converter() {
+            var medida = Number(window.prompt('Digite uma distância em metros(m)'))
+            var km = Number(medida - multikm)
+            conversao.innerHTML = `${km} quilomêtros (Km)`
+        }
+    </script>
+</body>
+</html>
